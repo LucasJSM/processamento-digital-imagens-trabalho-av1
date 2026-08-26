@@ -26,7 +26,7 @@ pip install -r requirements.txt
 🚀 Como Executar
 Você pode executar cada questão individualmente via terminal:
 
-Bash
+```Bash
 # Questão 1
 python q1.py
 
@@ -35,3 +35,4 @@ python q2.py
 
 # Questão 3
 python q3.py
+```
