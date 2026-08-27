@@ -6,11 +6,11 @@ Este repositório contém três atividades práticas de **Processamento Digital 
 
 ## 📁 Estrutura do Projeto
 
-* 📄 `q1.py` — Exibição de imagem
-* 📄 `q2.py` — Conversão para escala de cinza
-* 📄 `q3.py` — Separação e recomposição de canais RGB
-* 📂 `images/` — Imagens utilizadas nas atividades
-* 📄 `split_rgb_channels.py` — SScript para separar os canais RGB de uma imagem e salvar separadamente
+- 📄 `q1.py` — Exibição de imagem
+- 📄 `q2.py` — Conversão para escala de cinza
+- 📄 `q3.py` — Separação e recomposição de canais RGB
+- 📂 `images/` — Imagens utilizadas nas atividades
+- 📄 `split_rgb_channels.py` — Script para separar os canais RGB de uma imagem e salvar separadamente
 
 ---
 
@@ -18,7 +18,7 @@ Este repositório contém três atividades práticas de **Processamento Digital 
 
 Antes de executar os scripts, certifique-se de ter o **Python 3** instalado.
 
- Instale as dependências com o comando:
+Instale as dependências com o comando:
 
 ```bash
 pip install -r requirements.txt
@@ -37,3 +37,20 @@ python q2.py
 # Questão 3
 python q3.py
 ```
+
+## ✨ Extras
+
+Use o script `split_rgb_channels.py` para separar uma imagem nos canais **azul**, **vermelho** e **verde**.
+
+1. Adicione uma imagem `.jpg` à pasta `images/`.
+2. Altere a variável `img_name` para o nome da sua imagem, onde o script irá procurar por `images/{img_name}.jpg`.
+3. Execute o comando na raiz do projeto:
+
+```bash
+python split_rgb_channels.py
+```
+
+Os canais separados serão salvos em `images/` com os nomes 
+1. `image_name_blue.jpg`
+2. `image_name_red.jpg`
+3. `image_name_green.jpg`.
