@@ -2,10 +2,10 @@ import cv2 as cv
 import sys
 
 '''
-Script to split the RGB channels of an image and save them as separate images.
+Script para separar os canais RGB de uma imagem e salvar separadamente
 '''
 
-def split_rgb_channels(img_path):
+def split_rgb_channels(img_path, img_name):
 	img = cv.imread(img_path)
 
 	if img is None:
@@ -14,17 +14,16 @@ def split_rgb_channels(img_path):
 
 	b, g, r = cv.split(img)
 
-	cv.imwrite('./images/spiderman_blue.jpg', b)
-	cv.imwrite('./images/spiderman_red.jpg', r)
-	cv.imwrite('./images/spiderman_green.jpg', g)
+	cv.imwrite(f'./images/{img_name}_blue.jpg', b)
+	cv.imwrite(f'./images/{img_name}_red.jpg', r)
+	cv.imwrite(f'./images/{img_name}_green.jpg', g)
 
 	print('Canais RGB separados e salvos com sucesso!')
 
-
 def main():
-	img_path = './images/spiderman.jpg'
-	split_rgb_channels(img_path)
-
+	img_name = 'spiderman'
+	img_path = f'./images/{img_name}.jpg'
+	split_rgb_channels(img_path, img_name)
 
 if __name__ == '__main__':
 	main()
