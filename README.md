@@ -6,10 +6,11 @@ Este repositório contém três atividades práticas de **Processamento Digital 
 
 ## 📁 Estrutura do Projeto
 
-* 📄 `q1.py` — Redimensionamento e exibição de imagem
+* 📄 `q1.py` — Exibição de imagem
 * 📄 `q2.py` — Conversão para escala de cinza
 * 📄 `q3.py` — Separação e recomposição de canais RGB
 * 📂 `images/` — Imagens utilizadas nas atividades
+* 📄 `split_rgb_channels.py` — SScript para separar os canais RGB de uma imagem e salvar separadamente
 
 ---
 
