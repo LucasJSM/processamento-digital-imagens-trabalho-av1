@@ -1,10 +1,10 @@
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-def show_image(img_name):
-    blue = cv.imread(f"./images/{img_name}_blue.jpg", 0)
-    green = cv.imread(f"./images/{img_name}_green.jpg", 0)
-    red = cv.imread(f"./images/{img_name}_red.jpg", 0)
+def show_image():
+    blue = cv.imread("./images/spiderman_blue.jpg", 0)
+    green = cv.imread("./images/spiderman_green.jpg", 0)
+    red = cv.imread("./images/spiderman_red.jpg", 0)
 
     # Juntando os canais
     img = cv.merge([blue, green, red])
@@ -38,8 +38,7 @@ def show_image(img_name):
     plt.show()
 
 def main():
-    img_name = "spiderman"
-    show_image(img_name)
+    show_image()
 
 if __name__ == "__main__":
     main()
