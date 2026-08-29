@@ -24,7 +24,7 @@ Instale as dependências com o comando:
 pip install -r requirements.txt
 ```
 
-🚀 Como Executar
+## 🚀 Como Executar
 Você pode executar cada questão individualmente via terminal:
 
 ```Bash
